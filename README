@@ -1,0 +1,8 @@
+This PHP Class simplifies using of Mcrypt PHP extention to encrypt or
+decrypt strings and files.
+
+This class has very simple usage but it provides a bit more secure way to
+encrypt files than standart Mcrypt functions does:
+    - passwords always derivated using HMAC
+    - if message length isn't multiple of block size then it appended with
+      pseudorandom octets
